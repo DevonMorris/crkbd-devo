@@ -42,13 +42,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_FN] = LAYOUT( \
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5 ,                       KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10, KC_EQL,\
+      KC_F12,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5 ,                       KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10, KC_F11,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_TRNS,LALT(KC_1),LALT(KC_2),LALT(KC_3),LALT(KC_4),LALT(KC_5),           KC_LEFT, KC_DOWN,  KC_UP, KC_RIGHT, LALT(KC_0), KC_TRNS,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT,LALT(KC_6),LALT(KC_7),LALT(KC_8),LALT(KC_9),LALT(KC_0),           KC_MUTE, KC_VOLD, KC_VOLU, KC_TRNS, KC_TRNS, KC_RSFT,\
+      KC_LSFT,LALT(KC_6),LALT(KC_7),LALT(KC_8),LALT(KC_9),LALT(KC_0),           KC_TRNS, KC_TRNS, KC_VOLD, KC_MUTE, KC_VOLU, KC_RSFT,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LGUI,   KC_TRNS,  KC_SPC,     KC_ENT,   KC_TRNS, KC_RALT \
+                                          KC_TRNS, KC_TRNS, KC_TRNS,    KC_HOME, KC_END, KC_LGUI \
                                       //`--------------------------'  `--------------------------'
     ),
 
@@ -60,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, KC_CIRC, KC_AMPR, KC_ASTR, KC_TRNS, KC_TRNS,                      KC_RBRC, KC_RCBR, KC_RPRN, KC_EQL,  KC_END,  KC_RSFT,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_TRNS, KC_TRNS, KC_TRNS,   KC_TRNS,  KC_TRNS, KC_RGUI \
+                                          KC_TRNS, KC_TRNS, KC_TRNS,   KC_LALT,  KC_RALT, KC_DEL \
                                       //`--------------------------'  `--------------------------'
   ),
 };
