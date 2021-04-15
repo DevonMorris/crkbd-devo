@@ -44,9 +44,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
       KC_F12,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5 ,                       KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10, KC_F11,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_TRNS,LALT(KC_1),LALT(KC_2),LALT(KC_3),LALT(KC_4),LALT(KC_5),           KC_LEFT, KC_DOWN,  KC_UP, KC_RIGHT, LALT(KC_0), KC_TRNS,\
+      KC_CAPS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                     KC_LEFT, KC_DOWN,  KC_UP, KC_RIGHT, KC_MPLY, KC_TRNS,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT,LALT(KC_6),LALT(KC_7),LALT(KC_8),LALT(KC_9),LALT(KC_0),           KC_TRNS, KC_TRNS, KC_VOLD, KC_MUTE, KC_VOLU, KC_RSFT,\
+      KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                     KC_MUTE, KC_VOLD, KC_VOLU, KC_MPRV, KC_MNXT, KC_RSFT,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_TRNS, KC_TRNS, KC_TRNS,    KC_HOME, KC_END, KC_LGUI \
                                       //`--------------------------'  `--------------------------'
