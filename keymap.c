@@ -32,8 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          MO(_FN), KC_LALT,MO(_MOD),   KC_ENT, KC_SPC, KC_BSPC \
-                                      //`--------------------------'  `--------------------------'
+                  MO(_FN), MT(MOD_LALT, KC_LGUI), MO(_MOD),    MT(MOD_LSFT | MOD_LALT, KC_ENT), KC_SPC, MT(MOD_MEH, KC_BSPC) \
   ),
 
   [_FN] = LAYOUT_split_3x6_3( \
@@ -44,18 +43,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                     KC_MUTE, KC_VOLD, KC_VOLU, KC_MPRV, KC_MNXT, KC_RSFT,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_TRNS, KC_TRNS, KC_TRNS,    KC_HOME, KC_END, KC_LGUI \
+                                          KC_TRNS, KC_TRNS, KC_TRNS,    KC_HOME, KC_END, KC_DEL \
                                       //`--------------------------'  `--------------------------'
   ),
   [_MOD] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      KC_GRV,   KC_1,    KC_2,    KC_3,   KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,   KC_0,    KC_MINS,\
+      KC_TRNS,   KC_1,    KC_2,    KC_3,   KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,   KC_0,    KC_TRNS,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_GESC, KC_EXLM,  KC_AT,  KC_HASH, KC_DLR, KC_PERC,                       KC_LBRC, KC_LCBR, KC_LPRN, KC_PPLS, KC_MINS, KC_PLUS,\
+      KC_ESC, KC_EXLM,  KC_AT,  KC_HASH, KC_DLR, KC_PERC,                       KC_LBRC, KC_LCBR, KC_LPRN, KC_PPLS, KC_MINS, KC_PLUS,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, KC_CIRC, KC_AMPR, KC_ASTR, KC_TRNS, KC_TRNS,                      KC_RBRC, KC_RCBR, KC_RPRN, KC_EQL,  KC_UNDS, KC_RSFT,\
+      KC_TRNS, KC_CIRC, KC_AMPR, KC_ASTR, KC_GRV, LCTL(KC_B),                      KC_RBRC, KC_RCBR, KC_RPRN, KC_EQL,  KC_UNDS, KC_TRNS,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,  KC_RALT, KC_DEL \
+                                          KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,  KC_LALT, KC_TRNS \
                                       //`--------------------------'  `--------------------------'
   ),
 };
