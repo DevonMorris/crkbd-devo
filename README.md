@@ -1,21 +1,14 @@
 # How To
 
-Tested with qmk 0.16.9
-
-## Install Python
-
-You'll need python >= 3.7. Since I was using ubuntu 18.04 at the time, I
-elected to use a venv.
+Tested with qmk 1.1.7
 
 ## Install qmk
 
+Assuming `uv` is installed, this is as simple as
+
 ```
-python -m pip install qmk
-qmk setup
+uv tool install qmk
 ```
-Make sure the udev rules get copied over correctly and pay attention to the
-warnings. You will not be able to flash if the microcontroller can't be
-detected.
 
 ## Clone this repo
 
