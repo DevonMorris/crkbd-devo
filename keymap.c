@@ -53,9 +53,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_ESC, KC_EXLM,  KC_AT,  KC_HASH, KC_DLR, KC_PERC,                       KC_LBRC, KC_LCBR, KC_LPRN, KC_PPLS, KC_MINS, KC_PLUS,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_TRNS, KC_CIRC, KC_AMPR, KC_ASTR, KC_GRV, LCTL(KC_B),                      KC_RBRC, KC_RCBR, KC_RPRN, KC_EQL,  KC_UNDS, KC_TRNS,\
+      KC_TRNS, KC_CIRC, KC_AMPR, KC_ASTR, KC_GRV, LCTL(KC_B),                   KC_RBRC, KC_RCBR, KC_RPRN, KC_EQL,  KC_UNDS, KC_TRNS,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,  KC_LALT, KC_LCTL \
+                                          KC_TRNS, KC_TRNS, KC_TRNS,    LALT(KC_LCTL),  KC_LALT, KC_LCTL \
                                       //`--------------------------'  `--------------------------'
   ),
 };
